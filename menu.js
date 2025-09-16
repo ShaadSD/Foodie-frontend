@@ -136,24 +136,22 @@ const updatePaginationButtons = () => {
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
 
-
     if (prevUrl) {
         prevBtn.classList.remove("disabled");
         prevBtn.onclick = (e) => {
             e.preventDefault();
-            loadFoods(prevUrl);
+            loadFoods(prevUrl.replace('http://', 'https://')); // 🟢 fix here
         };
     } else {
         prevBtn.classList.add("disabled");
         prevBtn.onclick = (e) => e.preventDefault();
     }
 
-   
     if (nextUrl) {
         nextBtn.classList.remove("disabled");
         nextBtn.onclick = (e) => {
             e.preventDefault();
-            loadFoods(nextUrl);
+            loadFoods(nextUrl.replace('http://', 'https://')); // 🟢 fix here
         };
     } else {
         nextBtn.classList.add("disabled");
