@@ -1,0 +1,84 @@
+body {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .form-section {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .order-summary {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-control::placeholder {
+      color: #adb5bd;
+    }
+
+    .payment-option {
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 12px;
+      background-color: #fefefe;
+      transition: all 0.3s ease;
+    }
+
+    .payment-option:hover {
+      border-color: #ffc107;
+      background-color: #fff8e1;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+      color: #6c757d;
+      font-weight: 500;
+    }
+
+    .btn-checkout {
+      background: linear-gradient(to right, #ffc107, #ffca2c);
+      border: none;
+      font-weight: bold;
+      padding: 14px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-checkout:hover {
+      background: linear-gradient(to right, #ffcd39, #ffe066);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #343a40;
+    }
+
+    .text-muted-small {
+      font-size: 14px;
+      color: #6c757d;
+    }
+    .cart-banner{
+  background-image:url('images/cart-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    }
+    .card img {
+    filter: brightness(1.1) contrast(1.05);
+}
+
+.form-control:focus{
+  outline: none;
+  box-shadow: none;
+  border-color: aliceblue;
+}

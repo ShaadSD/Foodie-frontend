@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+           <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Home Page</title>
+</head>
+<body>
+      <header>
+        
+<nav class="navbar navbar-expand-lg fixed-top py-3 bg-white">
+  <div class="container-fluid">
+
+    <!-- Logo + Foodie -->
+    <div class="d-flex align-items-center">
+      <a href="home.html" class="d-flex align-items-center text-decoration-none">
+        <img src="images/logo.png" alt="Logo" class="me-2" style="height: 40px;">
+        <span class="navbar-brand text-dark fw-bold mb-0 h1">Foodie</span>
+      </a>
+    </div>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center">
+
+        <a class="nav-link active" href="home.html">Home</a>
+        <a class="nav-link" href="product.html">Menu</a>
+        <a class="nav-link" href="About.html">About</a>
+        <a class="nav-link" href="contactUse.html">Contact</a>
+
+        <a id="cart-link" class="nav-link" href="cart.html" style="display:none;">Cart</a>
+        <a id="order-link" class="nav-link" href="order_history.html" style="display:none;">Order</a>
+        <a id="auth-link" class="nav-link" href="login.html">Login</a>
+
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+  </header>
+  <main>
+    <section class="banner-cover d-flex align-items-center text-center vh-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">   
+        <h1 class="display-4 fw-bold text-white mb-3">Welcome To FooDie</h1>
+        <h2 class="h4 fw-light text-white mb-4">
+          Come and eat well with our delicious &amp; healthy foods.
+        </h2>
+        <p class="text-white">Start your journey to wholesome meals today!</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+<!-- special offr items -->
+
+<section class="container">
+  <div class="offer-container w-50">
+    <h1 class="text-center">Our Special Offer</h1>
+    <p class="text-center fs-5 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo ex earum voluptatem quis sapiente soluta dolor, ab ullam fugit nemo!</p>
+  </div>
+
+  <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
+    <ul id="pizza-slider" class="slider-container py-4">
+  
+    </ul>
+    <div class="slider-indicators"></div>
+  </div>
+
+</section>
+
+
+<!-- End sprcial offer section -->
+
+
+<section class="container review-section py-5">
+  <div class="review-title text-center mb-5">
+    <h1 class="fw-bold">Customer Reviews</h1>
+    <p class="text-muted fs-5">See what our customers say about their experience with us.</p>
+  </div>
+
+ <div class="swiffy-slider slider-item-show2 slider-nav-round slider-nav-outside slider-indicators-round">
+  <ul class="slider-container" id="review-slider-container">
+    <!-- Reviews will be inserted here via JS -->
+  </ul>
+
+  <button type="button" class="slider-nav" aria-label="Previous slide"></button>
+  <button type="button" class="slider-nav slider-nav-next" aria-label="Next slide"></button>
+
+  <div class="slider-indicators" id="review-slider-indicators">
+    <!-- Indicators will be inserted here via JS -->
+  </div>
+</div>
+</section>
+
+<section class="container py-5 bg-light">
+  <div class="review-title text-center mb-5">
+    <h2 class="display-5 fw-bold">Meet Our Chefs</h2>
+    <p class="text-muted fs-5">Our culinary team brings passion, precision, and tradition to every dish we serve.</p>
+  </div>
+
+  <div class="swiffy-slider slider-item-show3 slider-nav-round slider-nav-page">
+    <ul class="slider-container">
+      
+      <!-- Chef 1 -->
+      <li>
+        <div class="card border-0 shadow-sm rounded chef-card">
+          <div class="ratio ratio-4x3">
+            <img src="images/uncertain-male-chef-holding-two-different-dish-his-hand.jpg" class="card-img-top object-cover" alt="Chef">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-1">Chef Gennaro Rossi</h5>
+            <p class="text-muted small">Head Chef - 20 years of Italian cuisine mastery</p>
+            <div class="social-icons mt-2">
+              <a href="https://facebook.com/chef.gennaro" target="_blank" class="text-primary me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/chef.gennaro" target="_blank" class="text-danger me-3"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/1234567890" target="_blank" class="text-success"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Chef 2 -->
+      <li>
+        <div class="card border-0 shadow-sm rounded chef-card">
+          <div class="ratio ratio-4x3">
+            <img src="images/chef2.jpg" class="card-img-top object-cover" alt="Chef">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-1">Chef Isabella Cruz</h5>
+            <p class="text-muted small">Pastry Expert - Queen of tiramisu & desserts</p>
+            <div class="social-icons mt-2">
+              <a href="https://facebook.com/chef.isabella" target="_blank" class="text-primary me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/chef.isabella" target="_blank" class="text-danger me-3"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/1987654321" target="_blank" class="text-success"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Chef 3 -->
+      <li>
+        <div class="card border-0 shadow-sm rounded chef-card">
+          <div class="ratio ratio-4x3">
+            <img src="images/chef3.jpg" class="card-img-top object-cover" alt="Chef">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="fw-semibold mb-1">Chef Leo Nakamura</h5>
+            <p class="text-muted small">Fusion Specialist - Asian meets Italian cuisine</p>
+            <div class="social-icons mt-2">
+              <a href="https://facebook.com/chef.leo" target="_blank" class="text-primary me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/chef.leo" target="_blank" class="text-danger me-3"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/1122334455" target="_blank" class="text-success"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <button type="button" class="slider-nav" aria-label="Previous slide"></button>
+    <button type="button" class="slider-nav slider-nav-next" aria-label="Next slide"></button>
+  </div>
+</section>
+
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-md-4 mb-3">
+        <h5>Foodie</h5>
+        <p>Delicious meals, expert chefs, and unforgettable dining experiences. Join us and taste the difference.</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled ul-style">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Menu</a></li>
+          <li><a href="#" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+        <p>Email: support@foodie.com</p>
+        <p>Phone: +880 123 456 789</p>
+        <p>Location: Dhaka, Bangladesh</p>
+        <div class="mt-3 social-icons">
+          <a href="#" class="instagram me-3 fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="youtube me-3 fs-4"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="facebook fs-4"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Foodie. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  </main>
+    <script src="./home.js"></script>
+    <script src="./cart.js"></script>
+    <!-- <script src="./cart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
