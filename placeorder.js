@@ -114,7 +114,7 @@ const renderCartSummary = () => {
         const total = data.total + delivery;
 
         localStorage.setItem("cartId", data.id);
-
+        orderSummary.innerHTML="";
         orderSummary.innerHTML = `
             <h2 class="section-title mb-4">Your Order</h2>
 

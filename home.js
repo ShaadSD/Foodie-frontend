@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="card-text text-center">${item.description}</p>
                 <div class="price mb-3">
                   <span class="text-muted text-decoration-line-through me-2">$${item.before_price}</span>
-                  <span class="fw-bold text-warning fs-5">$${item.after_price}</span>
+                  <span class="fw-bold text-warning fs-5">৳${item.after_price}</span>
                 </div>
                 <button class="btn btn-warning text-white add-to-cart-btn" data-itemid="${item.id1}">
                     Add to Cart
